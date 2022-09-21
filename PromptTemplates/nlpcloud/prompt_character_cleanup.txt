@@ -1,0 +1,7 @@
+Given the following CHARACTERS, summarize the character's traits and remove any duplicate characters:
+
+CHARACTERS:
+<<CHARACTERS>>
+
+SUMMARY CHARACTERS:
+1.

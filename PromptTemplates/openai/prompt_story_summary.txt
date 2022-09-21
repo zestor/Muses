@@ -1,0 +1,4 @@
+Summarize this story:
+<<STORY>>
+
+Summary:

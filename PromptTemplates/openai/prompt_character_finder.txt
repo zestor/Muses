@@ -1,0 +1,10 @@
+Given the following SCENE and CHARACTERS, write a character summary for any new characters that appear in the SCENE.
+
+CHARACTERS:
+<<CHARACTERS>>
+
+SCENE: 
+<<SCENE>>
+
+NEW CHARACTERS:
+1.

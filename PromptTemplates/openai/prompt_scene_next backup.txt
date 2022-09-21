@@ -1,0 +1,12 @@
+Remember no one dies in the story. Given the following PREVIOUS SCENE, Write a new open-ended NEXT SCENE in the direction of the PLOT QUEUE, in the style of H.G. Wells, with vivid sensory, imagination, and feeling, while taking the story in a new random direction with new named characters. The NEXT SCENE should be more detailed than the PREVIOUS SCENE. Remember do no use character names from film, television, books, or movies.
+
+PREVIOUS SCENE: 
+<<PREVIOUS>>
+
+PLOT QUEUE:
+<<PLOT>>
+
+CHARACTERS:
+<<CHARACTERS>>
+
+NEXT SCENE:

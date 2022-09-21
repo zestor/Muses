@@ -1,0 +1,16 @@
+using the previous character descriptions and then what happens to the characters in the story write new character descriptions with the character's current location, what see, hear, smell, taste, touch, what they feel, what are their motivations, and what are their fears, and remove any duplicate characters:
+
+previous character descriptions:
+Grath Zeras - Orc warrier; master at arms for the Veserak orc clan.
+Bandits - a group of criminals that hide in the shadows and ambush their victims. They are armed with swords. 
+villagers - the people that Grath Zeras protects. They are thankful for his bravery.
+
+what happens to the characters in the story:
+Grath Zeras rode his mount through the dense forest, his armor clanking in the silence. He had been on the trail of a band of bandits for days, and was getting close. He could sense them nearby, hiding in the shadows, waiting to ambush him. But he was not afraid. He was a master at arms, and had faced worse foes than these. He rounded a corner and saw them waiting for him, swords drawn. He drew his own weapon and charged. The battle was fierce, but Grath prevailed. He sent the bandits running, and rode back to the village to warn them of the danger. The villagers were relieved to see him, and thanked him for his bravery. Grath Zeras had saved them from a fate worse than death, and they would never forget him.
+
+new character descriptions:
+1.
+
+==========
+
+Grath Zeras - Orc warrior; master at arms for the Veserak orc clan. Grath is currently riding through a dense forest, chasing after a band of bandits. He is armed with a sword, and is wearing armor. He is motivated by his duty to protect the villagers, and is not afraid of the bandits. 2. Bandits - a group of criminals that hide in the shadows and ambush their victims. They are armed with swords. The bandits are currently hiding in the shadows, waiting to ambush Grath Zeras. They are motivated by their desire to rob and kill Grath, and are afraid of being caught and killed. 3. Villagers - the people that Grath Zeras protects. They are thankful for his bravery. The villagers are currently in their homes, waiting for Grath to return. They are motivated by their desire to stay alive, and are afraid of the bandits.

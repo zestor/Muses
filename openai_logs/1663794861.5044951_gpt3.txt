@@ -1,0 +1,17 @@
+Given the following SCENE and CHARACTERS, write a character summary for any new characters that appear in the SCENE.
+
+CHARACTERS:
+Randy Walkins-A banker who was recently attacked by a group of men. He is shaken up by the encounter and doesn't know who his attackers were or what they want from him. He is currently at his desk at Southern Rebel Savings and Loan in downtown Charlotte, North Carolina. 
+The Kutuks-A group of beings from a planet called Zebu. They are currently in the forest outside Boone, North Carolina, opening a portal to Earth. 
+The Ones-Also known as the Fallen Angels. They are a group of beings who are working in secret behind world governments to prepare for the return of God. They are currently feverishly managing the purity of bloodline closest to the original Fallen Angel decendents. 
+Red Element-A secret organization that is protecting Randy Walkins.
+
+SCENE: 
+Randy is sitting at his desk, lost in thought, when he is interrupted by his boss, Mr. Williams. "Randy, are you okay? You've been really out of it lately." Mr. Williams looks concerned. "I'm fine, Mr. Williams. Just a lot on my mind." Randy forces a smile. "Well, try to clear your head. We have a lot of work to do today." Mr. Williams walks back to his office. Randy tries to focus on his work, but he can't help but feel like something is coming for him. He has a sneaking suspicion that his attackers from the weekend are somehow connected to the Ones, and he knows that he needs to be careful. He needs to find out more about them and stop them before they can hurt anyone else. Randy's mind races as he tries to piece together what he knows about the Ones. He knows that they are a powerful and dangerous organization, and he knows that they are after him. He doesn't know why, but he knows that he needs to be careful. He needs to find out more about them and stop them before they can hurt anyone else.
+
+NEW CHARACTERS:
+1.
+
+==========
+
+Mr. Williams-Randy's boss. He is concerned about Randy's recent behavior. 2. The Kutuks-A group of beings from a planet called Zebu. They are currently in the forest outside Boone, North Carolina, opening a portal to Earth. 3. The Ones-Also known as the Fallen Angels. They are a group of beings who are working in secret behind world governments to prepare for the return of God. They are currently feverishly managing the purity of bloodline closest to the original Fallen Angel decendents. 4. Red Element-A secret organization that is protecting Randy Walkins.

@@ -1,0 +1,6 @@
+Do not reference well-known, copyrighted, or trademarked characters and locations. I am an expert creative writer. Describe in greater detail without changing the meaning by adding vivid sensory and feeling to the story.
+
+story:
+<<STORY>>
+
+detailed story:

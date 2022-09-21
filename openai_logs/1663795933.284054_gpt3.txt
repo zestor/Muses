@@ -1,0 +1,15 @@
+Given the following SCENE and CHARACTERS, write a character summary for any new characters that appear in the SCENE.
+
+CHARACTERS:
+Grath Zeras- Orc warrior; master at arms for the Veserak orc clan. Grath is motivated by his duty to protect the villagers, and is not afraid of the bandits. He is currently standing in the middle of the village, surrounded by the dead bodies of the bandits. He is covered in blood and he is panting from the effort of the fight. He has his sword drawn and he is ready to fight again if necessary. 
+Villagers- the people that Grath Zeras protects. They are thankful for his bravery. The villagers are currently in their homes, hiding from the bandits. They are motivated by their desire to stay alive, and are afraid of the bandits.
+
+SCENE: 
+Suddenly, he heard a noise coming from one of the houses. He tensed, his hand going to his sword, and he crept towards the house. He peered inside, and he saw a bandit standing over a villager, a knife in his hand. The bandit was about to kill the villager, and Grath knew that he had to act fast. He leapt into the house, his sword drawn, and he ran the bandit through. The bandit collapsed to the ground with a thud, and the villager scrambled away, his face pale. Grathturned to the villagers, his face grim. "There are still bandits in the village," he said. "I will find them and I will kill them. You must stay in your homes and lock your doors. Do not come out until I say it is safe." The villagers nodded, and they hurried to their homes. Grath watched them go, and then he turned to the task at hand. He would find the bandits and he would make sure that the village was safe. He crept through the village, his sword at the ready, and he listened for any sign of the bandits. He heard a noise coming from one of the houses, and he tensed, his hand going to his sword. He crept towards the house, and he peered inside. He saw a bandit standing over a villager, a knife in his hand. The bandit was about to kill the villager, and Grath knew that he had to act fast. He leapt into the house, his sword drawn, and he ran the bandit through. The bandit collapsed to the ground with a thud, and the villager scrambled away, his face pale. Grath turned to the villagers, his face grim. "There are still bandits in the village," he said. "I will find them and I will kill them. You must stay in your homes and lock your doors. Do not come out until I say it is safe." The villagers nodded, and they hurried to their homes. Grath watched them go, and then he turned to the task at hand. He would find the bandits and he would make sure that the village was safe.
+
+NEW CHARACTERS:
+1.
+
+==========
+
+Bandits- the people that Grath Zeras is fighting against. They are motivated by their desire to harm the villagers. They are currently in the village, hiding from Grath. They are armed with knives and they are dangerous. 2. The villager that Grath saved- a person who resides in the village that Grath is protecting. This villager is currently in their home, hiding from the bandits. They are motivated by their desire to stay alive, and are afraid of the bandits.

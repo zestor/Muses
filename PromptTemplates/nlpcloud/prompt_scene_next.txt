@@ -1,0 +1,15 @@
+Remember no one dies in the story. Remember do not use trademarked or copyrighted character names from film, television, books, or movies. Remember new characters, locations, and items should have memorable names. While focusing on the PREVIOUS SCENE yet knowing the PLOT QUEUE, CHARACTERS, and BACKGROUND, Write in converational tone, an open-ended NEXT SCENE longer than the PREVIOUS SCENE in the style of J.K. Rowling, with vivid sensory, imagination, and feeling. 
+
+PREVIOUS SCENE: 
+<<PREVIOUS>>
+
+PLOT QUEUE:
+<<PLOT>>
+
+CHARACTERS:
+<<CHARACTERS>>
+
+BACKGROUND:
+<<SUMMARY>>
+
+NEXT SCENE:

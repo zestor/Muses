@@ -1,0 +1,16 @@
+Given the following SCENE and CHARACTERS, write a character summary for any new characters that appear in the SCENE.
+
+CHARACTERS:
+Grath Zeras- Orc warrior and master at arms for the Veserak orc clan. Grath is motivated by his duty to protect the villagers, and is not afraid of the bandits. He is currently standing in a house in the middle of the village, surrounded by the dead body of the bandit. He is covered in blood and he is panting from the effort of the fight. He has his sword drawn and he is ready to fight again if necessary. 
+The bandits- A group of people who are currently attacking the village that Grath is protecting. The bandits are motivated by their desire to steal and kill. They are currently in the village, attacking the villagers. 
+The villagers- The people that Grath Zeras protects. They are thankful for his bravery. The villagers are currently in their homes, hiding from the bandits. They are motivated by their desire to stay alive, and are afraid of the bandits.
+
+SCENE: 
+Grath makes his way through the village, checking each house for signs of the bandits. He knows that they could be hiding anywhere, waiting to ambush him. He is getting tired, but he can't let his guard down. His eyes feel heavy and his limbs feel like lead, but he can't allow himself to rest. If he does, it could mean the difference between life and death. He finally comes to the last house in the village and he is about to enter when he hears a noise from inside. He knows that the bandits are inside, and he is ready for them. He kicks the door open and charges into the house, sword drawn. He is met by a group of bandits, and he doesn't hesitate. He swings his sword, and the first bandit falls. The others come at him, but he is ready for them. He ducks and dodges their attacks, and then he strikes. He cuts them down one by one until they are all lying on the ground, dead. He is covered in blood and he is panting from the effort of the fight, but he knows that the village is safe now. He can finally rest.
+
+NEW CHARACTERS:
+1.
+
+==========
+
+Grath Zeras: Orc warrior and master at arms for the Veserak orc clan. Grath is motivated by his duty to protect the villagers, and is not afraid of the bandits. He is currently standing in a house in the middle of the village, surrounded by the dead body of the bandit. He is covered in blood and he is panting from the effort of the fight. He has his sword drawn and he is ready to fight again if necessary. 2. The bandits: A group of people who are currently attacking the village that Grath is protecting. The bandits are motivated by their desire to steal and kill. They are currently in the village, attacking the villagers.

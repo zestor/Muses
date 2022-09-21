@@ -1,0 +1,16 @@
+Given the following SCENE and CHARACTERS, write a character summary for any new characters that appear in the SCENE.
+
+CHARACTERS:
+Grath Zeras- Orc warrior and master at arms for the Veserak orc clan. Grath is motivated by his duty to protect the villagers, and is not afraid of the bandits. He is currently standing in the middle of the village, surrounded by the dead bodies of the bandits. He is covered in blood and he is panting from the effort of the fight. He has his sword drawn and he is ready to fight again if necessary. 
+The bandits- A group of people who are currently attacking the village that Grath is protecting. The bandits are motivated by their desire to steal and kill. They are currently in the village, attacking the villagers. 
+The villagers- The people that Grath Zeras protects. They are thankful for his bravery. The villagers are currently in their homes, hiding from the bandits. They are motivated by their desire to stay alive, and are afraid of the bandits.
+
+SCENE: 
+Grath cautiously enters the house the bandit had been trying to break into. He knows that the bandit could be hiding inside, waiting to ambush him. He is ready for anything, but he doesn't see anyone. He cautiously makes his way through the house, checking each room for the bandit. He finally finds the bandit hiding in a closet. The bandit jumps out at him with a knife, but Grath is faster. He grabs the bandit's arm and twists it, disarming the bandit. He then grabs the bandit by the throat and slams him against the wall. The bandit is gasping for air, and Grath doesn't hesitate. He pulls out his knife and slits the bandit's throat. The body falls to the ground with a thud, and Grath moves on. He knows that there are more bandits out there, and he has to find them before they can hurt anyone else.
+
+NEW CHARACTERS:
+1.
+
+==========
+
+The bandit- A person who is attacking the village that Grath is protecting. The bandit is motivated by their desire to steal and kill. They are currently in the village, attacking the villagers. 2. The villagers- The people that Grath Zeras protects. They are thankful for his bravery. The villagers are currently in their homes, hiding from the bandits. They are motivated by their desire to stay alive, and are afraid of the bandits.

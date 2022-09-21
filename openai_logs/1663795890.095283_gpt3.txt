@@ -1,0 +1,16 @@
+Given the following SCENE and CHARACTERS, write a character summary for any new characters that appear in the SCENE.
+
+CHARACTERS:
+Grath Zeras - Orc warrior; master at arms for the Veserak orc clan. Grath has just saved the villagers from a band of bandits, and they are all looking at him with gratitude and respect. Grath is motivated by his duty to protect the villagers, and is not afraid of the bandits. He is currently standing in the middle of the village, surrounded by the dead bodies of the bandits. He is covered in blood and he is panting from the effort of the fight. He has his sword drawn and he is ready to fight again if necessary. 
+Bandits - a group of criminals that hide in the shadows and ambush their victims. They are armed with swords. The bandits are currently lying on the ground, dead or dying. They have been defeated by Grath Zeras. 
+Villagers - the people that Grath Zeras protects. They are thankful for his bravery. The villagers are currently in their homes, hiding from the bandits. They are motivated by their desire to stay alive, and are afraid of the bandits.
+
+SCENE: 
+Grath Zeras stood in the middle of the village, his heart still pounding from the fight. He knew that he had to stay alert, and he didn't want the bandits to hurt the villagers. He scanned the darkness, his hand on his sword, but there was no sign of the bandits. He breathed a sigh of relief and sheathed his sword. He would have to keep watch, but for now, the village was safe. The villagers were gathered around him, their faces pale in the moonlight. He could see the fear in their eyes, and he knew that they were depending on him to keep them safe. He would not let them down.
+
+NEW CHARACTERS:
+1.
+
+==========
+
+Grath Zeras: Orc warrior; master at arms for the Veserak orc clan. Grath has just saved the villagers from a band of bandits, and they are all looking at him with gratitude and respect. Grath is motivated by his duty to protect the villagers, and is not afraid of the bandits. He is currently standing in the middle of the village, surrounded by the dead bodies of the bandits. He is covered in blood and he is panting from the effort of the fight. He has his sword drawn and he is ready to fight again if necessary. 2. Villagers: the people that Grath Zeras protects. They are thankful for his bravery. The villagers are currently in their homes, hiding from the bandits. They are motivated by their desire to stay alive, and are afraid of the bandits.

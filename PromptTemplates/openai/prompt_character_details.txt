@@ -1,0 +1,10 @@
+using the previous character descriptions and then what happens to the characters in the story write new character descriptions with the character's current location, what see, hear, smell, taste, touch, what they feel, what are their motivations, and what are their fears, and remove any duplicate characters:
+
+previous character descriptions:
+<<CHARACTERS>>
+
+what happens to the characters in the story:
+<<SCENE>>
+
+new character descriptions:
+1.

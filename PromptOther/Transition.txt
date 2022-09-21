@@ -1,0 +1,14 @@
+Given the plot and scenes below, Write 500 words that focus on the transition between scene 1 and scene 2 and tell the story.
+
+Plot:
+It is the year 21xx and North America is a very different place. For centuries, the continent has been plagued by a powerful and deadly magical force known as the Dark One. This evil force has destroyed entire civilizations, leaving behind only ruins and death in its wake. In recent years, however, the Dark One has begun to grow weaker, and its hold on the continent has begun to slip.
+
+In the midst of this chaos, a young woman named Sarah Miller decides to take up the mantle of the Dark One's opponent. Sarah is a skilled magic user and has been training her whole life to defeat the Dark One. She is also brooding and haunted by past traumas, which gives her the strength and determination to see this through to the end.
+
+Sarah's journey will take her across the continent, to different places and times, and she will face many challenges along the way. But she is not alone; she is joined by a rag-tag group of misfits, each with their own unique skills and abilities. Together, they will battle the Dark One and its minions, in the hopes of freeing the continent from its tyranny once and for all.
+
+Scenes:
+1. Sarah Miller decides to take up the mantle of the Dark One's opponent.
+2. Sarah is a skilled magic user and has been training her whole life to defeat the Dark One.
+
+Output:
