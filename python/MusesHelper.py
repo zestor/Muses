@@ -35,20 +35,8 @@ class MusesHelper:
         if not os.path.exists(path):
             os.makedirs(path)
 
-    def nlpcloudCallOut(prompt):
-        max_retry = 5
-        retry = 0
-        prompt = prompt.encode(encoding='ASCII',errors='ignore').decode()  # force it to fix any unicode errors
-        while True:
-            try:
-                sleep(1) # Wait 1 second because NLP Cloud will error with HTTP 429 too many requests
-                client = nlpcloud.Client(
-                    'finetuned-gpt-neox-20b',
-                    nlp_cloud_api_key,
-                    gpu=True,
-                    lang='en')
-
-                engine_output = client.generation(
+    def __nlpcloudPrivateCallout(client, prompt):
+        return client.generation(
                     prompt,
                     min_length=100,
                     max_length=256,
@@ -69,6 +57,32 @@ class MusesHelper:
                     remove_end_sequence=False
                     )
 
+    def __openaiPrivateCallout(prompt):
+        return openai.Completion.create(
+                    engine='text-davinci-002',
+                    prompt=prompt,
+                    temperature=0.75,
+                    max_tokens=256,
+                    top_p=1.0,
+                    frequency_penalty=0.0,
+                    presence_penalty=0.0,
+                    stop=['zxcv'])
+
+    def nlpcloudCallOut(prompt):
+        max_retry = 5
+        retry = 0
+        prompt = prompt.encode(encoding='ASCII',errors='ignore').decode()  # force it to fix any unicode errors
+        while True:
+            try:
+                sleep(1) # Wait 1 second because NLP Cloud will error with HTTP 429 too many requests
+                client = nlpcloud.Client(
+                    'finetuned-gpt-neox-20b',
+                    MusesHelper.nlp_cloud_api_key,
+                    gpu=True,
+                    lang='en')
+
+                engine_output = MusesHelper.__nlpcloudPrivateCallout(client,prompt)
+
                 text = engine_output['generated_text'].strip()
                 text = re.sub('\s+', ' ', text)
 
@@ -76,25 +90,8 @@ class MusesHelper:
                 # last character is not some type of sentence ending punctuation
                 if not text.endswith(('.','!','?','"')):
                     sleep(1) # Wait 1 second because NLP Cloud will error with HTTP 429 too many requests
-                    engine_output = client.generation(
-                        prompt+text,
-                        min_length=100,
-                        max_length=256,
-                        length_no_input=True,
-                        remove_input=True,
-                        end_sequence=None,
-                        top_p=1,
-                        temperature=0.85,
-                        top_k=25,
-                        repetition_penalty=1,
-                        length_penalty=1,
-                        do_sample=True,
-                        early_stopping=False,
-                        num_beams=1,
-                        no_repeat_ngram_size=0,
-                        num_return_sequences=1,
-                        bad_words=None,
-                        remove_end_sequence=False)
+                    engine_output = MusesHelper.__nlpcloudPrivateCallout(client,prompt+text)
+
                     text2 = engine_output['generated_text'].strip()
                     text2 = re.sub('\s+', ' ', text2)
 
@@ -104,25 +101,8 @@ class MusesHelper:
                 # last character is not some type of sentence ending punctuation
                 if not text.endswith(('.','!','?','"')):
                     sleep(1) # Wait 1 second because NLP Cloud will error with HTTP 429 too many requests
-                    engine_output = client.generation(
-                        prompt+text,
-                        min_length=100,
-                        max_length=256,
-                        length_no_input=True,
-                        remove_input=True,
-                        end_sequence=None,
-                        top_p=1,
-                        temperature=0.85,
-                        top_k=25,
-                        repetition_penalty=1,
-                        length_penalty=1,
-                        do_sample=True,
-                        early_stopping=False,
-                        num_beams=1,
-                        no_repeat_ngram_size=0,
-                        num_return_sequences=1,
-                        bad_words=None,
-                        remove_end_sequence=False)
+                    engine_output = MusesHelper.__nlpcloudPrivateCallout(client,prompt+text)
+
                     text2 = engine_output['generated_text'].strip()
                     text2 = re.sub('\s+', ' ', text2)
 
@@ -145,33 +125,19 @@ class MusesHelper:
     def openaiCallOut(prompt, engine='text-davinci-002', temp=0.75, top_p=1.0, tokens=256, freq_pen=0.0, pres_pen=0.0, stop=['zxcv']):
         max_retry = 5
         retry = 0
-        prompt = prompt.encode(encoding='ASCII',errors='ignore').decode()  # force it to fix any unicode errors
+        prompt = prompt.encode(encoding='ASCII',errors='ignore').decode()
         while True:
             try:
-                response = openai.Completion.create(
-                    engine=engine,
-                    prompt=prompt,
-                    temperature=temp,
-                    max_tokens=tokens,
-                    top_p=top_p,
-                    frequency_penalty=freq_pen,
-                    presence_penalty=pres_pen,
-                    stop=stop)
+                response = MusesHelper.__openaiPrivateCallout(prompt)
+                
                 text = response['choices'][0]['text'].strip()
                 text = re.sub('\s+', ' ', text)
 
                 # retry incomplete responses once
                 # last character is not some type of sentence ending punctuation
                 if not text.endswith(('.','!','?','"')):
-                    response = openai.Completion.create(
-                        engine=engine,
-                        prompt=prompt+text,
-                        temperature=temp,
-                        max_tokens=tokens,
-                        top_p=top_p,
-                        frequency_penalty=freq_pen,
-                        presence_penalty=pres_pen,
-                        stop=stop)
+                    response = MusesHelper.__openaiPrivateCallout(prompt+text)
+
                     text2 = response['choices'][0]['text'].strip()
                     text2 = re.sub('\s+', ' ', text2)
 
@@ -180,15 +146,8 @@ class MusesHelper:
                 # retry incomplete responses twice
                 # last character is not some type of sentence ending punctuation
                 if not text.endswith(('.','!','?','"')):
-                    response = openai.Completion.create(
-                        engine=engine,
-                        prompt=prompt+text,
-                        temperature=temp,
-                        max_tokens=tokens,
-                        top_p=top_p,
-                        frequency_penalty=freq_pen,
-                        presence_penalty=pres_pen,
-                        stop=stop)
+                    response = MusesHelper.__openaiPrivateCallout(prompt+text)
+
                     text2 = response['choices'][0]['text'].strip()
                     text2 = re.sub('\s+', ' ', text2)
 
@@ -269,7 +228,6 @@ class MusesHelper:
         longest_text = ''
         longest_text_length = 0
         for future in concurrent.futures.as_completed(prompt_queue):
-            #prompt = prompt_queue[future]
             try:
                 generated_text = future.result()
 
