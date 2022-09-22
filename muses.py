@@ -62,9 +62,7 @@ if __name__ == '__main__':
         prompt = MusesHelper.openFile('PromptTemplates/' + SELECTED_AI_ENGINE + '/prompt_character_finder.txt').replace('<<CHARACTERS>>',characters).replace('<<SCENE>>',previous_scene)
 
         new_characters = MusesHelper.callAIEngine(SELECTED_AI_ENGINE,prompt)
-        #print('\n====NEW CHARS=======> \n%s' % (new_characters)) 
         new_characters = MusesHelper.cleanUpAIengineOutput(new_characters)
-        #print('\n====NEW CHARS=======> \n%s' % (new_characters)) 
         characters = characters + '\r\n' + new_characters
         print('\n====NEW CHARS=======> \n%s' % (characters)) 
 
@@ -72,14 +70,10 @@ if __name__ == '__main__':
         prompt = MusesHelper.openFile('PromptTemplates/' + SELECTED_AI_ENGINE + '/prompt_character_details.txt').replace('<<CHARACTERS>>',characters).replace('<<SCENE>>',previous_scene)
 
         new_characters = MusesHelper.callAIEngine(SELECTED_AI_ENGINE,prompt)
-        #print('\n====CHAR DETAILS=======> \n%s' % (new_characters)) 
         characters = MusesHelper.cleanUpAIengineOutput(new_characters)
         print('\n====CHAR DETAILS=======> \n%s' % (characters)) 
 
         file1 = open('story.txt', 'a')  # append mode
-        #file1.write('===== CHARS =====\r\n')
-        #file1.write(longest_text + '\r\n')
-        #file1.write('===== STORY =====\r\n')
         file1.write(longest_text + '\r\n')
         file1.close()
 
