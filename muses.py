@@ -18,6 +18,7 @@ from python.MusesHelper import MusesHelper
 # SETUP WHAT AI ENGINE TO USE
 SELECTED_AI_ENGINE = MusesHelper.AI_ENGINE_OPENAI
 AI_ENGINE_MAX_PARALLELISM = 3
+PARAGRAPHS_TO_GENERATE = 2
 
 # MAIN PROGRAM
 if __name__ == '__main__':
@@ -36,7 +37,7 @@ if __name__ == '__main__':
         shutil.rmtree('SceneOutput', ignore_errors=False, onerror=None)
 
     # GENERATE PARAGRAPHS
-    for i in range(0,15):
+    for i in range(1,PARAGRAPHS_TO_GENERATE+1):
 
         # RANDOM PLOT QUEUES FED INTO THE PROMPT
         plot_twists = MusesHelper.openFile('sceneGenData/plotqueues.txt').splitlines()
