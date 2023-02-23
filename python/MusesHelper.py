@@ -6,6 +6,7 @@ import os
 import re
 from concurrent.futures.thread import ThreadPoolExecutor
 from time import sleep, time
+import cohere 
 
 import nlpcloud # NLP Cloud Playground https://www.nlpcloud.com
 import nltk.data # NLP sentence parser used to remove any duplicate word for word sentence output from AI response
@@ -17,11 +18,13 @@ import openai # OpenAI https://www.openai.com
 
 class MusesHelper:
 
-    open_ai_api_key = os.getenv('OPENAI_API_KEY') # not needed, but for clarity
+    open_ai_api_key = os.getenv('OPENAI_API_KEY')
     nlp_cloud_api_key = os.getenv('NLPCLOUD_API_KEY') 
+    cohere_api_key = os.getenv('COHERE_PROD_API_KEY')
 
     AI_ENGINE_NLPCLOUD = 'nlpcloud'
     AI_ENGINE_OPENAI = 'openai'
+    AI_ENGINE_COHERE = 'cohere'
 
     def openFile(filepath):
         with open(filepath, 'r', encoding='utf-8') as infile:
@@ -59,14 +62,25 @@ class MusesHelper:
 
     def __openaiPrivateCallout(prompt):
         return openai.Completion.create(
-                    engine='text-davinci-002',
+                    engine='text-davinci-003',
                     prompt=prompt,
-                    temperature=0.75,
-                    max_tokens=256,
+                    temperature=0.7,
+                    max_tokens=2500,
                     top_p=1.0,
-                    frequency_penalty=0.0,
-                    presence_penalty=0.0,
+                    frequency_penalty=0.3,
+                    presence_penalty=0.3,
                     stop=['zxcv'])
+
+    def __coherePrivateCallout(client, prompt):
+        return client.generate(
+            model='command-xlarge-nightly',
+            prompt=prompt,
+            max_tokens=750,
+            temperature=0.7,
+            p=1.0,
+            frequency_penalty=0.3,
+            presence_penalty=0.3,
+            stop_sequences=['zxcv'])
 
     def nlpcloudCallOut(prompt):
         max_retry = 5
@@ -122,7 +136,7 @@ class MusesHelper:
                 print('Error communicating with NLP Cloud:', oops)
                 sleep(1)
 
-    def openaiCallOut(prompt, engine='text-davinci-002', temp=0.75, top_p=1.0, tokens=256, freq_pen=0.0, pres_pen=0.0, stop=['zxcv']):
+    def openaiCallOut(prompt):
         max_retry = 5
         retry = 0
         prompt = prompt.encode(encoding='ASCII',errors='ignore').decode()
@@ -167,6 +181,56 @@ class MusesHelper:
                 print('Error communicating with OpenAI:', oops)
                 sleep(1)
 
+    def cohereCallOut(prompt):
+        max_retry = 5
+        retry = 0
+        prompt = prompt.encode(encoding='ASCII',errors='ignore').decode()
+        while True:
+            try:
+                client = cohere.Client(MusesHelper.cohere_api_key)
+
+                response = MusesHelper.__coherePrivateCallout(client, prompt)
+                
+                text = response.generations[0].text.strip()
+                text = text.replace('"/','"')
+                text = re.sub('\s+', ' ', text)
+
+                # retry incomplete responses once
+                # last character is not some type of sentence ending punctuation
+                if not text.endswith(('.','!','?','"')):
+                    response = MusesHelper.__coherePrivateCallout(client, prompt+text)
+
+                    text2 = response.generations[0].text.strip()
+                    text2 = text2.replace('"/','"')
+                    text2 = re.sub('\s+', ' ', text2)
+
+                    text = text + text2
+
+                # retry incomplete responses twice
+                # last character is not some type of sentence ending punctuation
+                if not text.endswith(('.','!','?','"')):
+                    response = MusesHelper.__coherePrivateCallout(client, prompt+text)
+
+                    text2 = response.generations[0].text.strip()
+                    text2 = text2.replace('"/','"')
+                    text2 = re.sub('\s+', ' ', text2)
+
+                    text = text + text2
+                
+                filename = '%s_cohere.txt' % time()
+
+                MusesHelper.mkDirIfNotExists('logs')
+                MusesHelper.mkDirIfNotExists('logs/cohere')
+
+                MusesHelper.saveFile('logs/cohere/%s' % filename, prompt + '\n\n==========\n\n' + text)
+                return text
+            except Exception as oops:
+                retry += 1
+                if retry >= max_retry:
+                    return "COHERE error: %s" % oops
+                print('Error communicating with CO:HERE:', oops)
+                sleep(1)
+
     def callAIEngine(AIEngine, prompt):
         scene = ''
         print('\n======================= CALLING AI ENGINE =======================')
@@ -175,6 +239,8 @@ class MusesHelper:
             scene = MusesHelper.openaiCallOut(prompt)
         if AIEngine == MusesHelper.AI_ENGINE_NLPCLOUD:
             scene = MusesHelper.nlpcloudCallOut(prompt)
+        if AIEngine == MusesHelper.AI_ENGINE_COHERE:
+            scene = MusesHelper.cohereCallOut(prompt)
 
         print('\n',scene,'\n','=======================')
         return scene

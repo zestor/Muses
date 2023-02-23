@@ -18,15 +18,15 @@ from python.MusesHelper import MusesHelper
 # SETUP WHAT AI ENGINE TO USE
 SELECTED_AI_ENGINE = MusesHelper.AI_ENGINE_OPENAI
 AI_ENGINE_MAX_PARALLELISM = 3
-PARAGRAPHS_TO_GENERATE = 2
+PARAGRAPHS_TO_GENERATE = 15
 
 # MAIN PROGRAM
 if __name__ == '__main__':
 
     # SOME TEXT LOOP VARIABLES
-    previous_scene = 'Grath was at Greybeard''s magical forge deep within the Azor mountain range.'
-    characters = 'Grath Zeras - Orc warrier; master at arms for the Veserak orc clan.'
-    summary = 'In Raevel territory there is a village called Debus who makes tribute to a great fire dragon that powers the volcano deep inside Azor mountain.'
+    previous_scene = 'Grath is on Zebulon, a planet where robots mine Terribum. A planet with diverse terrain, purple sky, and two suns. Something has happened in this universe that makes Terribum much more valuable than ever before. Multiple alliances are on their way to Zebulon to take over the planet.'
+    characters = 'Grath Zeras - space outlaw, owner of the fastest ship in this galaxy.'
+    summary = 'In Zorak territory there is a planet called Zebulon which is a robotic mining colony for Terribum the element used by Alliances for traveling to other parallel dimensions.'
     protagonist = 'Grath Zeras'
 
     # CREATE STORY.TXT, CLEARING IT OUT
